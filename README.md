@@ -26,7 +26,7 @@ Shallow model(fc layer x 2) - epsilon: 0.25
 2. Adversarial Test Accuracy: 1%
 3. Misclassification : 9696/10000
 
-Shallow model(fc layer x 2) - epsilon: 0.25 / data_normalization
+Shallow model(fc layer x 2) - epsilon: 0.25 / data_normalization: True
 - If use dataset normalization, you can somewhat resist Adversarial Example.
 1. Test Accuracy: 98%
 2. Adversarial Test Accuracy: 89%
