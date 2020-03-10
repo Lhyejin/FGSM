@@ -15,6 +15,30 @@ If you want to choose Hyperparameter or Network type, see option
 <pre>
 <code>
 python fgsm_mnist.py -h
+usage: fgsm_mnist.py [-h] [--batch-size N] [--test-batch-size N] [--epochs N]
+                     [--lr LR] [--gamma M] [--no-cuda] [--log-interval N]
+                     [--epsilon EPSILON]
+                     [--dataset-normalize DATASET_NORMALIZE]
+                     [--network NETWORK] [--save-model]
+
+PyTorch MNIST Example
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --batch-size N        input batch size for training (default: 64)
+  --test-batch-size N   input batch size for testing (default: 1000)
+  --epochs N            number of epochs to train (default: 5)
+  --lr LR               learning rate (default: 0.001)
+  --gamma M             Learning rate step gamma (default: 0.7)
+  --no-cuda             disables CUDA training
+  --log-interval N      how many batches to wait before logging training
+                        status
+  --epsilon EPSILON
+  --dataset-normalize DATASET_NORMALIZE
+                        input whether normalize or not (default: False)
+  --network NETWORK     input Network type (Selected: fc, conv, drop /
+                        default: 'fc')
+  --save-model          For Saving the current Model
 </code>
 </pre>
 
