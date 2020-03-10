@@ -97,6 +97,7 @@ def train(args, model, device, train_loader, optimizer):
 
 # Test phase
 def test(args, model, device, test_loader):
+    model.eval()
     test_loss = 0
     correct = 0
     adv_correct = 0
@@ -142,15 +143,15 @@ def main():
                         help='input batch size for training (default: 64)')
     parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
                         help='input batch size for testing (default: 1000)')
-    parser.add_argument('--epochs', type=int, default=14, metavar='N',
-                        help='number of epochs to train (default: 14)')
-    parser.add_argument('--lr', type=float, default=1.0, metavar='LR',
-                        help='learning rate (default: 1.0)')
+    parser.add_argument('--epochs', type=int, default=5, metavar='N',
+                        help='number of epochs to train (default: 5)')
+    parser.add_argument('--lr', type=float, default=0.001, metavar='LR',
+                        help='learning rate (default: 0.001)')
     parser.add_argument('--gamma', type=float, default=0.7, metavar='M',
                         help='Learning rate step gamma (default: 0.7)')
     parser.add_argument('--no-cuda', action='store_true', default=False,
                         help='disables CUDA training')
-    parser.add_argument('--log-interval', type=int, default=10, metavar='N',
+    parser.add_argument('--log-interval', type=int, default=640, metavar='N',
                         help='how many batches to wait before logging training status')
     parser.add_argument('--epsilon', type=float, default=0.25)
     parser.add_argument('--dataset-normalize', type=bool, default=False,
@@ -167,7 +168,7 @@ def main():
 
     transformation = transforms.ToTensor()
     # Dataset normalize
-    if args.data_normalize:
+    if args.dataset_normalize:
         transformation = transforms.Compose([transforms.ToTensor(),
                                              transforms.Normalize((0.1307,), (0.3081,))])
 
