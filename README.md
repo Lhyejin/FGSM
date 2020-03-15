@@ -2,7 +2,7 @@
  
 This is the implementation in pytorch of FGSM based [Explaining and Harnessing Adversarial Examples(2015)](https://arxiv.org/abs/1412.6572)
 
-Use Two dataset : MNIST, CIFAR10
+Use Two dataset : MNIST(fc layer*2), CIFAR10(googleNet)
 
 quick start
 <pre>
