@@ -176,7 +176,7 @@ def test(args, model, device, test_loader):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
+    parser = argparse.ArgumentParser(description='PyTorch CIFAR-10 Example')
     parser.add_argument('--batch-size', type=int, default=100, metavar='N',
                         help='input batch size for training (default: 100)')
     parser.add_argument('--test-batch-size', type=int, default=100, metavar='N',

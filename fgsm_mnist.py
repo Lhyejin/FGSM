@@ -154,11 +154,10 @@ def main():
     parser.add_argument('--log-interval', type=int, default=640, metavar='N',
                         help='how many batches to wait before logging training status')
     parser.add_argument('--epsilon', type=float, default=0.25)
-    parser.add_argument('--dataset-normalize', type=bool, default=False,
+    parser.add_argument('--dataset-normalize', action='store_true' , default=False,
                         help='input whether normalize or not (default: False)')
     parser.add_argument('--network', type=str, default='fc',
                         help='input Network type (Selected: fc, conv, drop / default: \'fc\')')
-
     parser.add_argument('--save-model', action='store_true', default=False,
                         help='For Saving the current Model')
     args = parser.parse_args()
