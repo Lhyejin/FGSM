@@ -77,3 +77,10 @@ Shallow model(fc layer x 2) - epsilon: 0.25
 2. Adversarial Test Accuracy: 1%
 3. Misclassification : 9696/10000
 
+### CIFAR-10 DataSet
+GoogleNet - epsilon: 0.25
+- use default argument(epoch 20)
+1. Test Accuracy : 82%
+2. Adversarial Test Accuracy: 10%
+3. Misclassification : 9191/10000
+
