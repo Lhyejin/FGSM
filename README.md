@@ -84,3 +84,7 @@ GoogleNet - epsilon: 0.25
 2. Adversarial Test Accuracy: 10%
 3. Misclassification : 9191/10000
 
+- epoch( 1000)
+1. Test Accuracy : 91%
+2. Adverarial Test Accuracy: 12%
+3. Misclassification: 8775/10000
