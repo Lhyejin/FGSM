@@ -13,9 +13,9 @@ python fgsm_cifar10.py
 </pre>
 
 Run this commend for more information or help
+### MNIST Example
 <pre>
 <code>
-#MNIST Example
 python fgsm_mnist.py -h
 usage: fgsm_mnist.py [-h] [--batch-size N] [--test-batch-size N] [--epochs N]
                      [--lr LR] [--gamma M] [--no-cuda] [--log-interval N]
@@ -39,8 +39,11 @@ optional arguments:
   --network NETWORK    input Network type (Selected: fc, conv, drop / default:
                        'fc')
   --save-model         For Saving the current Model
-
-#CIAR-10 Example
+</code>
+</pre>
+### CIAR-10 Example
+<pre>
+<code>
 python fgsm_cifar10.py -h
 usage: fgsm_cifar10.py [-h] [--batch-size N] [--test-batch-size N]
                        [--epochs N] [--lr LR] [--gamma M] [--no-cuda]
