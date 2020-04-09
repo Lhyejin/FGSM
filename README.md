@@ -20,7 +20,7 @@ usage: fgsm.py [-h] [--batch-size N] [--test-batch-size N] [--epochs N] [--lr LR
                [--log-interval N] [--epsilon EPSILON] [--dataset-normalize] [--network NETWORK] [--save-model]
                [--dataset DATASET]
 
-PyTorch Example
+PyTorch FGSM
 
 optional arguments:
   -h, --help           show this help message and exit
