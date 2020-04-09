@@ -27,11 +27,7 @@ numpy=1.18.1=py36h4f9e942_0
 numpy-base=1.18.1=py36hde5b4d6_1
 olefile=0.46=py36_0
 openssl=1.1.1f=h7b6447c_0
-<<<<<<< HEAD
-pillow=6.2.1=py36hd70f55b_1
-=======
 pillow<7.0
->>>>>>> efb41e479865eeb87cca8ea8d6936d583cc229e5
 pip=20.0.2=py36_1
 python=3.6.10=hcf32534_1
 pytorch=1.4.0=py3.6_cuda10.0.130_cudnn7.6.3_0
