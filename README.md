@@ -11,7 +11,7 @@ python fgsm.py
 </code>
 </pre>
 
-### MNIST Example
+### Example
 <pre>
 <code>
 # Run this commend for more information or help
@@ -20,7 +20,7 @@ usage: fgsm.py [-h] [--batch-size N] [--test-batch-size N] [--epochs N] [--lr LR
                [--log-interval N] [--epsilon EPSILON] [--dataset-normalize] [--network NETWORK] [--save-model]
                [--dataset DATASET]
 
-PyTorch MNIST Example
+PyTorch Example
 
 optional arguments:
   -h, --help           show this help message and exit
