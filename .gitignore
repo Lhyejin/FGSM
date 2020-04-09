@@ -3,3 +3,4 @@ data/*
 *.swp
 .idea/
 .ipynb_checkpoints/
+__pycache__/

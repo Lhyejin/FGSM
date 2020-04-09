@@ -7,21 +7,18 @@ Use Two dataset : MNIST(fc layer*2), CIFAR10(googleNet)
 quick start
 <pre>
 <code>
-python fgsm_mnist.py #or
-python fgsm_cifar10.py
+python fgsm.py
 </code>
 </pre>
 
-Run this commend for more information or help
 ### MNIST Example
 <pre>
 <code>
-python fgsm_mnist.py -h
-usage: fgsm_mnist.py [-h] [--batch-size N] [--test-batch-size N] [--epochs N]
-                     [--lr LR] [--gamma M] [--no-cuda] [--log-interval N]
-                     [--epsilon EPSILON]
-                     [--dataset-normalize DATASET_NORMALIZE]
-                     [--network NETWORK] [--save-model]
+# Run this commend for more information or help
+$python fgsm.py -h
+usage: fgsm.py [-h] [--batch-size N] [--test-batch-size N] [--epochs N] [--lr LR] [--gamma M] [--no-cuda]
+               [--log-interval N] [--epsilon EPSILON] [--dataset-normalize] [--network NETWORK] [--save-model]
+               [--dataset DATASET]
 
 PyTorch MNIST Example
 
@@ -34,41 +31,18 @@ optional arguments:
   --gamma M            Learning rate step gamma (default: 0.7)
   --no-cuda            disables CUDA training
   --log-interval N     how many batches to wait before logging training status
-  --epsilon EPSILON
+  --epsilon EPSILON    epsilon(perturbation) of adversarial attack
   --dataset-normalize  input whether normalize or not (default: False)
-  --network NETWORK    input Network type (Selected: fc, conv, drop / default:
-                       'fc')
+  --network NETWORK    input Network type (Selected: fc, conv, drop, googlenet / default: 'fc')
   --save-model         For Saving the current Model
-</code>
-</pre>
-### CIAR-10 Example
-<pre>
-<code>
-python fgsm_cifar10.py -h
-usage: fgsm_cifar10.py [-h] [--batch-size N] [--test-batch-size N]
-                       [--epochs N] [--lr LR] [--gamma M] [--no-cuda]
-                       [--log-interval N] [--epsilon EPSILON]
-                       [--dataset-normalize] [--train-mode]
-                       [--model_parameter MODEL_PARAMETER] [--save-model]
+  --dataset DATASET    choose dataset : mnist or cifar
 
-PyTorch CIFAR-10 Example
+# MNIST Example
+$python fgsm.py
 
-optional arguments:
-  -h, --help            show this help message and exit
-  --batch-size N        input batch size for training (default: 100)
-  --test-batch-size N   input batch size for testing (default: 100)
-  --epochs N            number of epochs to train (default: 20)
-  --lr LR               learning rate (default: 0.001)
-  --gamma M             Learning rate step gamma (default: 0.7)
-  --no-cuda             disables CUDA training
-  --log-interval N      how many batches to wait before logging training
-                        status
-  --epsilon EPSILON
-  --dataset-normalize   input whether normalize or not (default: False)
-  --train-mode          input whether training or not (default: True
-  --model_parameter MODEL_PARAMETER
-                        if test mode, input model parameter path
-  --save-model          For Saving the current Model
+# CIAR-10 Example
+$python fgsm.py --dataset cifar
+
 </code>
 </pre>
 
